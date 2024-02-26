@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styles for the Invoice component */
+
+.invoice {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+.invoice-header {
+  text-align: center;
+}
+
+.sender-info,
+.recipient-info {
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.total-amount {
+  margin-top: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Media query for responsive design (adjust as needed) */
+@media (max-width: 600px) {
+  .invoice {
+    padding: 10px;
+  }
+  table {
+    font-size: 14px;
+  }
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
