@@ -4,6 +4,7 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { Watermark } from 'antd';
 
+
 function App() {
 
   const[loader, setloader] = useState(false);
@@ -49,7 +50,13 @@ function App() {
     <div >
     
     <div className="invoice">
-    <Watermark content={recipientInfo.email}>
+    <Watermark content={"KOTI CHOHAN"}
+      gap={[150,150]}
+      rotate={-22}
+      font={{
+        fontSize: 20
+      }}
+    >
         <div className="invoice-header">
         <h1>invoice</h1>
         </div>
